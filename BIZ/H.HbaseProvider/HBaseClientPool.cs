@@ -101,7 +101,7 @@ namespace H.HbaseProvider
                 }
             }
 
-           
+              
 
             if (clientlist.Count > MAX_CLIENTCOUNT) throw new Exception("超出最大HClinet最大个数");
 
