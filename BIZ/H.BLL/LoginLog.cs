@@ -39,6 +39,9 @@ namespace H.BLL
 
         }
 
+        //这里加一行，测试一下提交变更
+
+
         //public static void PoolAddLog(string userid, string ip, DateTime logintime, bool result)
         //{
         //    using (var hclient = HBaseClientPool.GetHclient())
@@ -67,7 +70,7 @@ namespace H.BLL
         /// <returns></returns>
         public static List<TRowResult> GetLog(string userid, int top = 100)
         {
-
+            
             string prefixrow = H.Comm.StringUtility.FixedLenString(userid, 20);
 
             using (var hclient = HBaseClientPool.GetHclient())
