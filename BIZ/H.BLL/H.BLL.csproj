@@ -43,7 +43,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Content.cs" />
     <Compile Include="LoginLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

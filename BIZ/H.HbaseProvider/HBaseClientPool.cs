@@ -89,28 +89,35 @@ namespace H.HbaseProvider
         /// <returns></returns> cf c
         public static HClient GetHclient()
         {
-            m_mutex.WaitOne(); //先阻塞
-            for (var i = 0; i < clientlist.Count; i++)
+            try
             {
-                if (clientlist[i].IsFree)
+                m_mutex.WaitOne(); //先阻塞
+                for (var i = 0; i < clientlist.Count; i++)
                 {
-                   
-                    clientlist[i].IsFree = false;
-                    m_mutex.ReleaseMutex();//释放资源
-                    return clientlist[i];
+                    if (clientlist[i].IsFree)
+                    {
+
+                        clientlist[i].IsFree = false;
+                        //m_mutex.ReleaseMutex();//释放资源
+                        return clientlist[i];
+                    }
                 }
+
+
+
+                if (clientlist.Count > MAX_CLIENTCOUNT) throw new Exception("超出最大HClinet最大个数");
+
+                var item = new HClient();
+
+                item.Open();
+                item.IsFree = false;
+                //m_mutex.ReleaseMutex();//释放资源
+                return item;
             }
-
-              
-
-            if (clientlist.Count > MAX_CLIENTCOUNT) throw new Exception("超出最大HClinet最大个数");
-
-            var item = new HClient();
-
-            item.Open();
-            item.IsFree = false;
-            m_mutex.ReleaseMutex();//释放资源
-            return item;
+            finally
+            {
+                m_mutex.ReleaseMutex();//释放资源
+            }
         }
 
        
