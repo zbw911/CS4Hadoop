@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F452FA23-5242-4F06-8016-E55373D7D4F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.Hive</RootNamespace>
+    <AssemblyName>Lib.Hive</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thrift">
+      <HintPath>..\LIB\Thrift.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apache\Hadoop\Hive\Adjacency.cs" />
+    <Compile Include="Apache\Hadoop\Hive\AdjacencyType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\AlreadyExistsException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\ConfigValSecurityException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Constants.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Database.cs" />
+    <Compile Include="Apache\Hadoop\Hive\FieldSchema.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Graph.cs" />
+    <Compile Include="Apache\Hadoop\Hive\HiveClusterStatus.cs" />
+    <Compile Include="Apache\Hadoop\Hive\HiveObjectPrivilege.cs" />
+    <Compile Include="Apache\Hadoop\Hive\HiveObjectRef.cs" />
+    <Compile Include="Apache\Hadoop\Hive\HiveObjectType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\HiveServerException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Index.cs" />
+    <Compile Include="Apache\Hadoop\Hive\IndexAlreadyExistsException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\InvalidObjectException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\InvalidOperationException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\JobTrackerState.cs" />
+    <Compile Include="Apache\Hadoop\Hive\MetaException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\NodeType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\NoSuchObjectException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Operator.cs" />
+    <Compile Include="Apache\Hadoop\Hive\OperatorType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Order.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Partition.cs" />
+    <Compile Include="Apache\Hadoop\Hive\PrincipalPrivilegeSet.cs" />
+    <Compile Include="Apache\Hadoop\Hive\PrincipalType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\PrivilegeBag.cs" />
+    <Compile Include="Apache\Hadoop\Hive\PrivilegeGrantInfo.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Query.cs" />
+    <Compile Include="Apache\Hadoop\Hive\QueryPlan.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Role.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Schema.cs" />
+    <Compile Include="Apache\Hadoop\Hive\SerDeInfo.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Stage.cs" />
+    <Compile Include="Apache\Hadoop\Hive\StageType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\StorageDescriptor.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Table.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Task.cs" />
+    <Compile Include="Apache\Hadoop\Hive\TaskType.cs" />
+    <Compile Include="Apache\Hadoop\Hive\ThriftHive.cs" />
+    <Compile Include="Apache\Hadoop\Hive\ThriftHiveMetastore.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Type.cs" />
+    <Compile Include="Apache\Hadoop\Hive\UnknownDBException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\UnknownTableException.cs" />
+    <Compile Include="Apache\Hadoop\Hive\Version.cs" />
+    <Compile Include="Facebook\FB303\FacebookService.cs" />
+    <Compile Include="Facebook\FB303\fb_status.cs" />
+    <Compile Include="Hive\Constants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
