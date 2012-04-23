@@ -30,7 +30,7 @@
 //            socket = new TSocket(host, prot);
 
 //            this.Transport = new TBufferedTransport(socket);
-//            this.Transport.Open();
+//            this.Transport.Open();    
 
 
 //            var protocol = new TBinaryProtocol(Transport);

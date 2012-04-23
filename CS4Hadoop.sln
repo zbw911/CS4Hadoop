@@ -36,8 +36,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Example", "BIZ\H.Example\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.Comm", "Lib.Comm\Lib.Comm.csproj", "{24EDD19D-DFC6-459A-B567-9A8903B7BBDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.HbaseProvider.Test", "BIZ\H.HbaseProvider.Test\H.HbaseProvider.Test.csproj", "{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}"
-EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CS4Hadoop.vsmdi
@@ -181,16 +179,6 @@ Global
 		{24EDD19D-DFC6-459A-B567-9A8903B7BBDB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{24EDD19D-DFC6-459A-B567-9A8903B7BBDB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{24EDD19D-DFC6-459A-B567-9A8903B7BBDB}.Release|x86.ActiveCfg = Release|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +188,5 @@ Global
 		{E98AA56A-5B49-46DD-A3F4-5925A8243DFF} = {E5F44D97-99AA-4106-8031-775505B8CEFC}
 		{8E32D6DD-91EC-4FD4-8D48-799B0D129929} = {E5F44D97-99AA-4106-8031-775505B8CEFC}
 		{AAF76A4A-464B-485A-A77A-B7506CD6ABBB} = {E5F44D97-99AA-4106-8031-775505B8CEFC}
-		{B994E98D-CBE7-4FFD-96E2-EF0D2D89747C} = {E5F44D97-99AA-4106-8031-775505B8CEFC}
 	EndGlobalSection
 EndGlobal
